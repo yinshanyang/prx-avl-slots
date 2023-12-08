@@ -138,7 +138,7 @@ function getOutcome(): [string, string, string, string, string] {
     shuffled[3],
     shuffled[4],
   ]
-  if (Math.random() < 0.001) {
+  if (Math.random() < 0.00014) {
     const index = ~~(Math.random() * 5)
     outcome[index] = 'alecks'
   }
