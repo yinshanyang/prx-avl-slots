@@ -80,7 +80,7 @@ const Home = () => {
       className="absolute top-0 bottom-0 left-0 right-0 bg-purple flex flex-row items-center justify-center"
       onClick={handleSpin}
     >
-      <div className="w-full max-w-lg flex flex-row gap-2">
+      <div className="w-full max-w-lg flex flex-row pl-2 pr-2 gap-2">
         {slots.map((slot, index) => (
           <Slot key={index} index={index} slot={slot} isSpinning={isTop} />
         ))}
