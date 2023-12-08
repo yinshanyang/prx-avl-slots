@@ -3,7 +3,12 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Paper Rex | Alecks’ Top Secret Roster Generator',
-  description: 'Paper Rex Presents: Alecks’ Top Secret Roster Generator',
+  description: 'Generate a Paper Rex line-up for the next match',
+  openGraph: {
+    title: 'Paper Rex | Alecks’ Top Secret Roster Generator',
+    description: 'Generate a Paper Rex line-up for the next match',
+    images: 'https://prx-avl-roster.vercel.app/og-image.png',
+  },
 }
 
 export default function RootLayout({
