@@ -39,7 +39,7 @@ const Slot = ({
         ref={ref}
         className="absolute bottom-0 flex flex-col"
         style={{
-          alignItems: isSpinning ? 'flex-end' : 'flex-start',
+          flexDirection: isSpinning ? 'column-reverse' : 'column',
           transition: `transform ${1 + index * 0.5}s ease-out`,
           transform: isSpinning ? `translateY(100%)` : `translateY(0%)`,
           filter: isSpinning ? 'blur(1px)' : '',
