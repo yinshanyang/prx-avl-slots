@@ -81,7 +81,7 @@ const Home = () => {
         <img
           className="block w-full"
           src="/title.png"
-          alt="Paper Rex Presents Aleck’s Top Secret Line-Up Picker"
+          alt="Paper Rex Presents Alecks’ Top Secret Line-Up Picker"
         />
         <div className="flex flex-row pl-2 pr-2 gap-2">
           {slots.map((slot, index) => (

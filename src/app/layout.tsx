@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'we need a title',
-  description: 'and a description',
+  title: 'Paper Rex | Alecks’ Top Secret Line-Up Picker',
+  description: 'Paper Rex Presents: Alecks’ Top Secret Line-Up Picker',
 }
 
 export default function RootLayout({
