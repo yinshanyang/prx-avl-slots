@@ -151,7 +151,14 @@ function getKeys(): [string, string, string, string, string] {
 }
 
 function getShuffled(source: string[]) {
-  return source.slice().sort(() => (Math.random() > 0.5 ? 1 : -1))
+  const shuffled = source.slice()
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = ~~(Math.random() * (i + 1))
+    const temp = shuffled[i]
+    shuffled[i] = shuffled[j]
+    shuffled[j] = temp
+  }
+  return shuffled
 }
 
 export default Home
