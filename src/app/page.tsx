@@ -76,14 +76,23 @@ const Home = () => {
   }
 
   return (
-    <main
-      className="absolute top-0 bottom-0 left-0 right-0 bg-purple flex flex-row items-center justify-center"
-      onClick={handleSpin}
-    >
-      <div className="w-full max-w-lg flex flex-row pl-2 pr-2 gap-2">
-        {slots.map((slot, index) => (
-          <Slot key={index} index={index} slot={slot} isSpinning={isTop} />
-        ))}
+    <main className="absolute top-0 bottom-0 left-0 right-0 bg-purple flex flex-row items-center justify-center">
+      <div className="w-full max-w-lg">
+        <img
+          className="block w-full"
+          src="/title.png"
+          alt="Paper Rex Presents Aleck’s Top Secret Line-Up Picker"
+        />
+        <div className="flex flex-row pl-2 pr-2 gap-2">
+          {slots.map((slot, index) => (
+            <Slot key={index} index={index} slot={slot} isSpinning={isTop} />
+          ))}
+        </div>
+        <img
+          className="w-1/4 mt-4 m-auto cursor-pointer"
+          src="/button.png"
+          onClick={handleSpin}
+        />
       </div>
     </main>
   )
