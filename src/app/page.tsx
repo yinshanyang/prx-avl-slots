@@ -121,7 +121,18 @@ function getSlots(
 
 function getOutcome(): [string, string, string, string, string] {
   const shuffled = getShuffled(PLAYERS)
-  return [shuffled[0], shuffled[1], shuffled[2], shuffled[3], shuffled[4]]
+  const outcome: [string, string, string, string, string] = [
+    shuffled[0],
+    shuffled[1],
+    shuffled[2],
+    shuffled[3],
+    shuffled[4],
+  ]
+  if (Math.random() < 0.01) {
+    const index = ~~(Math.random() * 5)
+    outcome[index] = 'alecks'
+  }
+  return outcome
 }
 
 function getKeys(): [string, string, string, string, string] {
