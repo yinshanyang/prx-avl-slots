@@ -77,7 +77,7 @@ const Home = () => {
 
   return (
     <main
-      className="w-screen h-screen bg-purple flex flex-row items-center justify-center"
+      className="absolute top-0 bottom-0 left-0 right-0 bg-purple flex flex-row items-center justify-center"
       onClick={handleSpin}
     >
       <div className="w-full max-w-lg flex flex-row gap-2">
