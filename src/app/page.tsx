@@ -81,7 +81,7 @@ const Home = () => {
         <img
           className="block w-full"
           src="/title.png"
-          alt="Paper Rex Presents Alecks’ Top Secret Line-Up Picker"
+          alt="Paper Rex Presents Alecks’ Top Secret Roster Generator"
         />
         <div className="flex flex-row pl-2 pr-2 gap-2">
           {slots.map((slot, index) => (
@@ -91,6 +91,7 @@ const Home = () => {
         <img
           className="w-1/4 mt-4 m-auto cursor-pointer"
           src="/button.png"
+          alt="Press once before next map"
           onClick={handleSpin}
         />
       </div>
